@@ -11,7 +11,8 @@ APIFY_API_KEY = "apify_api_sWo8upg6Me4zM2FY6ui1H4KMr21f0V4nzs3U"
 
 client = ApifyClient(APIFY_API_KEY)
 
-def search_linkedin(job_title, job_region, job_country):
+def search_linkedin(preprocessed_title, job_region, job_country):
+    job_title = preprocessed_title
     jobs_list = []
     try:
         print("Searching for LinkedIn")
@@ -180,14 +181,27 @@ def main(job_title, job_region, job_country):
     
     jobs_list = []
     
-    # Search LinkedIn
-    linkedin_jobs = search_linkedin(job_title, ob_region, job_country)
-    jobs_list.extend(linkedin_jobs)
+    if "," in job_title:
+        updated_job_title = job_title.split(",")
 
-    time.sleep(3)
+        for title in updated_job_title:
+            # Search LinkedIn
+            preprocessed_title = title.strip()
+
+            linkedin_jobs = search_linkedin(preprocessed_title, job_region, job_country)
+            jobs_list.extend(linkedin_jobs)
+
+            time.sleep(3)
+    else:
+        preprocessed_title = job_title
+        
+        linkedin_jobs = search_linkedin(preprocessed_title, job_region, job_country)
+        jobs_list.extend(linkedin_jobs)
     
-    with open('jobs_list.json', 'w') as f:
-        json.dump(jobs_list, f, indent=4)
+    
+        
+        with open('jobs_list.json', 'w') as f:
+            json.dump(jobs_list, f, indent=4)
       
     # return jsonify(jobs_list)
     
@@ -204,7 +218,7 @@ if __name__ == '__main__':
     # print("Server started")
     # serve(app, host="127.0.0.1", port=5001)
 
-    job_title = input("Enter your desired job title(example: 'receptionist'): ")
+    job_title = input("Enter your desired job title(example: 'receptionist, web developer...'): ")
     job_region = input("Enter your desired job region(example: 'New York or Unknown'): ")
     job_country = input("Enter your desired job country(example: 'United States'): ")
     main(job_title, job_region, job_country)
