@@ -1,13 +1,23 @@
 from apify_client import ApifyClient
-import time
-from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS
-import json
+import json, time
+from fastapi import FastAPI, HTTPException
+import uvicorn
+from supabase import create_client, Client
+import os
+from datetime import datetime
+from dotenv import load_dotenv
 
-# app = Flask(__name__)
-# CORS(app)
+# Load environment variables from .env file
+load_dotenv()
 
-APIFY_API_KEY = "apify_api_sWo8upg6Me4zM2FY6ui1H4KMr21f0V4nzs3U"
+app = FastAPI()
+
+# Initialize Supabase client
+supabase: Client = create_client(
+    supabase_url=os.getenv("SUPABASE_URL"),
+    supabase_key=os.getenv("SUPABASE_KEY")
+)
+APIFY_API_KEY = os.getenv("APIFY_API_KEY")
 
 client = ApifyClient(APIFY_API_KEY)
 
@@ -31,7 +41,7 @@ def search_linkedin(preprocessed_title, job_region, job_country):
                 "apifyProxyCountry": "US"
             },
             "publishedAt": "r86400",
-            "rows": 1000, # maximum is 1000
+            "rows": 50, # maximum is 1000
             "title": job_title
         }
         
@@ -42,183 +52,90 @@ def search_linkedin(preprocessed_title, job_region, job_country):
         jobs_list = dataset_items
     except Exception as e:
         print(f"Error searching LinkedIn: {str(e)}")
+        error_message = f"Error searching LinkedIn: {str(e)}"
+        return [{"Error_message": error_message}]
     
     return jobs_list
 
-# def search_indeed(title, location):
-#     jobs_list = []
-#     try:
-#         print("Searching for Indeed")
-#         searching_title = title.strip().replace(" ", "+")
-#         searching_location = location.strip().replace(" ", "+")
-#         searching_url = f"https://www.indeed.com/jobs?q={searching_title}&l={searching_location}&fromage=1"
-        
-#         run_input = {
-#             "count": 500,
-#             "findContacts": False,
-#             "outputSchema": "raw",
-#             "proxy": {
-#                 "useApifyProxy": True,
-#                 "apifyProxyGroups": ["RESIDENTIAL"],
-#                 "apifyProxyCountry": "US"
-#             },
-#             "scrapeJobs.scrapeCompany": False,
-#             "scrapeJobs.searchUrl": searching_url,
-#             "useBrowser": True
-#         }
-        
-#         run = client.actor("qA8rz8tR61HdkfTBL").call(run_input=run_input)
-#         dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-#         print(f"Found {len(dataset_items)} jobs from Indeed")
-        
-#         for item in dataset_items:
-#             individual = {
-#                 "title": item.get('title'),
-#                 "description": item.get('jobDescription'),
-#                 "companyName": item.get('company'),
-#                 "companyUrl": item.get('companyOverviewLink'),
-#                 "location": item.get('jobLocationCity'),
-#                 "publisher": "Indeed",
-#                 "postedTime": item.get('formattedRelativeTime'),
-#                 "applyUrl": item.get('thirdPartyApplyUrl'),
-#             }
-#             jobs_list.append(individual)
-#     except Exception as e:
-#         print(f"Error searching Indeed: {str(e)}")
-    
-#     return jobs_list
 
-# def search_glassdoor(title, location, country):
-#     jobs_list = []
-#     try:
-#         print("Searching for Glassdoor")
-#         run_input = {
-#             "country": country,
-#             "city": location,
-#             "engines": "2",
-#             "last": "1d",
-#             "distance": "50",
-#             "delay": 2,
-#             "max": 500,
-#             "proxy": {
-#                 "useApifyProxy": True,
-#                 "apifyProxyGroups": ["RESIDENTIAL"],
-#                 "apifyProxyCountry": "US"
-#             },
-#             "title": title
-#         }
-        
-#         run = client.actor("PskQAJMqsgeJHXSDz").call(run_input=run_input)
-#         dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-#         print(f"Found {len(dataset_items)} jobs from Glassdoor")
-        
-#         for item in dataset_items:
-#             individual = {
-#                 "title": item.get('title'),
-#                 "description": item.get('description'),
-#                 "companyName": item.get('company'),
-#                 "companyUrl": item.get('company_url'),
-#                 "jobUrl": item.get('job_url'),
-#                 "location": item.get('location'),
-#                 "publisher": "Glassdoor",
-#             }
-#             jobs_list.append(individual)
-#     except Exception as e:
-#         print(f"Error searching Glassdoor: {str(e)}")
-    
-#     return jobs_list
 
-# def search_ziprecruiter(title, location, country):
-#     jobs_list = []
-#     try:
-#         print("Searching for Ziprecruiter")
-#         run_input = {
-#             "country": country,
-#             "city": location,
-#             "engines": "1",  
-#             "last": "1d",
-#             "distance": "50",
-#             "delay": 1,
-#             "max": 500,
-#             "proxy": {
-#                 "useApifyProxy": True,
-#                 "apifyProxyGroups": ["RESIDENTIAL"],
-#                 "apifyProxyCountry": "US"
-#             },
-#             "title": title
-#         }
+@app.post('/api/search')
+async def main(data: dict):
+    try:
+        job_title = data.get('jobTitle', '')
+        job_region = data.get('region', '')
+        job_country = data.get('country', '')
         
-#         run = client.actor("PskQAJMqsgeJHXSDz").call(run_input=run_input)
-#         dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-#         print(f"Found {len(dataset_items)} jobs from Ziprecruiter")
+        if not job_title or not job_country:
+            return {"error": "Job title and job country are required"}, 400
         
-#         for item in dataset_items:
-#             individual = {
-#                 "title": item.get('title'),
-#                 "description": item.get('description'),
-#                 "companyName": item.get('company'),
-#                 "companyUrl": item.get('company_url'),
-#                 "jobUrl": item.get('job_url'),
-#                 "location": item.get('location'),
-#                 "publisher": "Ziprecruiter",
-#             }
-#             jobs_list.append(individual)
-#     except Exception as e:
-#         print(f"Error searching Ziprecruiter: {str(e)}")
-    
-#     return jobs_list
+        jobs_list = []
+        
+        if "," in job_title:
+            updated_job_title = job_title.split(",")
 
-# @app.route('/api/search', methods=['POST'])
-def main(job_title, job_region, job_country):
-    # try:
-    # data = request.get_json()
-    # job_title = data.get('jobTitle', '')
-    # job_region = data.get('region', '')
-    # job_country = data.get('country', '')
-    
-    # if not job_title or not job_country:
-    #     return jsonify({"error": "Job title and job country are required"}), 400
-    
-    jobs_list = []
-    
-    if "," in job_title:
-        updated_job_title = job_title.split(",")
+            for title in updated_job_title:
+                preprocessed_title = title.strip()
 
-        for title in updated_job_title:
-            # Search LinkedIn
-            preprocessed_title = title.strip()
+                linkedin_jobs = search_linkedin(preprocessed_title, job_region, job_country)
+                jobs_list.extend(linkedin_jobs)
 
+        else:
+            preprocessed_title = job_title
+            
             linkedin_jobs = search_linkedin(preprocessed_title, job_region, job_country)
             jobs_list.extend(linkedin_jobs)
-
-            time.sleep(3)
-    else:
-        preprocessed_title = job_title
         
-        linkedin_jobs = search_linkedin(preprocessed_title, job_region, job_country)
-        jobs_list.extend(linkedin_jobs)
-    
-    
+        # Store in Supabase
+        for job in jobs_list:
+            if job.get("companyName") is None:
+                continue
+            job_data = {
+                "company": job.get("companyName"),
+                "company_url": job.get("companyUrl"),
+                "salary": job.get("salary"), 
+                "linkedin_url": job.get("jobUrl"), 
+                "indeed_url": job.get("applyUrl"), 
+                "apply_url":job.get("applyUrl"), 
+                "job_url": job.get("jobUrl"), 
+                "contract_type": job.get("contractType"), 
+                "job_description": job.get("description"), 
+                "experience_level": job.get("experienceLevel"), 
+                "location": job.get("location"), 
+                "posted_time": job.get("postedTime"), 
+                "published_at": job.get("publishedAt"), 
+                "publisher": job.get("publisher", "Linkedin"), 
+                "title": job.get("title"), 
+                "created_at": datetime.now().isoformat(), 
+                "other": job.get("benefits") 
+            }
+            
+            supabase.table("jobs").insert(job_data).execute()
         
+        # Also save to local JSON file
         with open('jobs_list.json', 'w') as f:
             json.dump(jobs_list, f, indent=4)
       
-    # return jsonify(jobs_list)
+        return jobs_list
     
-    # except Exception as e:
-    #     print(f"Error in main function: {str(e)}")
-    #     return jsonify({"error": str(e)}), 500
+    except Exception as e:
+        print(f"Error in main function: {str(e)}")
+        return ({"error": str(e)}), 500
 
-# @app.route('/api/test', methods=['POST'])
-# def test():
-#     print("Data was Received successfully")
-#     return jsonify({'message': 'Data was received successfully'})
+@app.post('/api/test')
+async def test(data: dict):
+    try:
+        print(data)
+        print("Data was Received successfully")
+        return {"message": "Data was received successfully"}
+    except Exception as e:
+        print(f"Error in test function: {str(e)}")
+        return ({"error": str(e)}), 500
+
 
 if __name__ == '__main__':
-    # print("Server started")
-    # serve(app, host="127.0.0.1", port=5001)
+    # job_title = input("Enter your desired job title(example: 'receptionist, web developer...'): ")
+    # job_region = input("Enter your desired job region(example: 'New York or Unknown'): ")
+    # job_country = input("Enter your desired job country(example: 'United States'): ")
 
-    job_title = input("Enter your desired job title(example: 'receptionist, web developer...'): ")
-    job_region = input("Enter your desired job region(example: 'New York or Unknown'): ")
-    job_country = input("Enter your desired job country(example: 'United States'): ")
-    main(job_title, job_region, job_country)
+    uvicorn.run(app, host="127.0.0.1", port=8080)
