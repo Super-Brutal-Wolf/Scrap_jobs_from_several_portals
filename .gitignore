@@ -3,3 +3,7 @@ __pycache__
 .env
 .venv
 jobs_list.json
+result_Indeed.py
+result_Linkedin.py
+temp.json
+temp.py
