@@ -1,122 +1,74 @@
-def search_indeed(title, location):
-    jobs_list = []
-    try:
-        print("Searching for Indeed")
-        searching_title = title.strip().replace(" ", "+")
-        searching_location = location.strip().replace(" ", "+")
-        searching_url = f"https://www.indeed.com/jobs?q={searching_title}&l={searching_location}&fromage=1"
-        
-        run_input = {
-            "count": 500,
-            "findContacts": False,
-            "outputSchema": "raw",
-            "proxy": {
-                "useApifyProxy": True,
-                "apifyProxyGroups": ["RESIDENTIAL"],
-                "apifyProxyCountry": "US"
-            },
-            "scrapeJobs.scrapeCompany": False,
-            "scrapeJobs.searchUrl": searching_url,
-            "useBrowser": True
-        }
-        
-        run = client.actor("qA8rz8tR61HdkfTBL").call(run_input=run_input)
-        dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-        print(f"Found {len(dataset_items)} jobs from Indeed")
-        
-        for item in dataset_items:
-            individual = {
-                "title": item.get('title'),
-                "description": item.get('jobDescription'),
-                "companyName": item.get('company'),
-                "companyUrl": item.get('companyOverviewLink'),
-                "location": item.get('jobLocationCity'),
-                "publisher": "Indeed",
-                "postedTime": item.get('formattedRelativeTime'),
-                "applyUrl": item.get('thirdPartyApplyUrl'),
-            }
-            jobs_list.append(individual)
-    except Exception as e:
-        print(f"Error searching Indeed: {str(e)}")
-    
-    return jobs_list
+from supabase import create_client, Client
+import os
+from datetime import datetime
+from dotenv import load_dotenv
+import logging
+import sys
+from jobs_list import jobs_list
 
-def search_glassdoor(title, location, country):
-    jobs_list = []
-    try:
-        print("Searching for Glassdoor")
-        run_input = {
-            "country": country,
-            "city": location,
-            "engines": "2",
-            "last": "1d",
-            "distance": "50",
-            "delay": 2,
-            "max": 500,
-            "proxy": {
-                "useApifyProxy": True,
-                "apifyProxyGroups": ["RESIDENTIAL"],
-                "apifyProxyCountry": "US"
-            },
-            "title": title
-        }
-        
-        run = client.actor("PskQAJMqsgeJHXSDz").call(run_input=run_input)
-        dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-        print(f"Found {len(dataset_items)} jobs from Glassdoor")
-        
-        for item in dataset_items:
-            individual = {
-                "title": item.get('title'),
-                "description": item.get('description'),
-                "companyName": item.get('company'),
-                "companyUrl": item.get('company_url'),
-                "jobUrl": item.get('job_url'),
-                "location": item.get('location'),
-                "publisher": "Glassdoor",
-            }
-            jobs_list.append(individual)
-    except Exception as e:
-        print(f"Error searching Glassdoor: {str(e)}")
-    
-    return jobs_list
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('app.log'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
-def search_ziprecruiter(title, location, country):
-    jobs_list = []
+logger = logging.getLogger(__name__)
+load_dotenv()
+
+required_env_vars = ['SUPABASE_URL', 'SUPABASE_SERVICE_ROLE_KEY']
+missing_vars = [var for var in required_env_vars if not os.getenv(var)]
+if missing_vars:
+    raise EnvironmentError(f"Missing required environment variables: {', '.join(missing_vars)}")
+
+# Initialize Supabase client
+try:
+    supabase: Client = create_client(
+        supabase_url=os.getenv("SUPABASE_URL"),
+        supabase_key=os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    )
+    logger.info("Successfully connected to Supabase")
+except Exception as e:
+    logger.error(f"Failed to connect to Supabase: {str(e)}")
+    raise
+
+def main():
     try:
-        print("Searching for Ziprecruiter")
-        run_input = {
-            "country": country,
-            "city": location,
-            "engines": "1",  
-            "last": "1d",
-            "distance": "50",
-            "delay": 1,
-            "max": 500,
-            "proxy": {
-                "useApifyProxy": True,
-                "apifyProxyGroups": ["RESIDENTIAL"],
-                "apifyProxyCountry": "US"
-            },
-            "title": title
-        }
-        
-        run = client.actor("PskQAJMqsgeJHXSDz").call(run_input=run_input)
-        dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-        print(f"Found {len(dataset_items)} jobs from Ziprecruiter")
-        
-        for item in dataset_items:
-            individual = {
-                "title": item.get('title'),
-                "description": item.get('description'),
-                "companyName": item.get('company'),
-                "companyUrl": item.get('company_url'),
-                "jobUrl": item.get('job_url'),
-                "location": item.get('location'),
-                "publisher": "Ziprecruiter",
-            }
-            jobs_list.append(individual)
+        for job in jobs_list:
+            job_data = {
+                    "company": job.get("companyName"),
+                    "company_url": job.get("companyUrl"),
+                    "salary": job.get("salary"), 
+                    "linkedin_url": job.get("jobUrl"), 
+                    "indeed_url": job.get("applyUrl"), 
+                    "apply_url": job.get("applyUrl"), 
+                    "job_url": job.get("jobUrl"), 
+                    "contract_type": job.get("contractType"), 
+                    "job_description": job.get("description"), 
+                    "experience_level": job.get("experienceLevel"), 
+                    "location": job.get("location"), 
+                    "posted_time": job.get("postedTime"), 
+                    "published_at": job.get("publishedAt"), 
+                    "publisher": job.get("publisher", "Linkedin"), 
+                    "title": job.get("title"), 
+                    "created_at": datetime.now().isoformat(), 
+                    "other": job.get("benefits") 
+                }
+            
+            try:
+                result = supabase.table('scraped_jobs').insert(job_data).execute()
+                logger.info(f"Successfully inserted job: {job_data['title']}")
+            except Exception as e:
+                logger.error(f"Failed to insert job {job_data['title']}: {str(e)}")
+                continue  # Continue with next job even if one fails
     except Exception as e:
-        print(f"Error searching Ziprecruiter: {str(e)}")
-    
-    return jobs_list
+        logger.error(f"Critical error in main function: {str(e)}")
+        raise  # Re-raise the exception to stop execution
+
+def calculator_length():
+    print(len(jobs_list))
+
+if __name__ == "__main__":
+    calculator_length()
