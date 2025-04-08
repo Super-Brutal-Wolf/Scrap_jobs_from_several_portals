@@ -7,6 +7,7 @@ import sys
 import json
 from result_Linkedin import result_linkedin
 from result_Indeed import result_indeed
+from result_Glassdoor import result_glassdoor
 
 logging.basicConfig(
     level=logging.INFO,
@@ -37,7 +38,7 @@ except Exception as e:
     raise
 
 def main():
-    for job_data in result_indeed:
+    for job_data in result_glassdoor:
         try:
             result = supabase.table('scraped_jobs').insert(job_data).execute()
             logger.info(f"Successfully inserted job: {job_data['title']}")
@@ -46,7 +47,7 @@ def main():
             continue  # Continue with next job even if one fails
 
 def calculator_length():
-    print(len(jobs_list))
+    print(len(result_glassdoor))
 
 sample1 = [{
         "id": "4161861382",
@@ -166,10 +167,49 @@ def test_add_url():
     new_url = "https://www.indeed.com" + original_url.get("viewJobLink")
     print(new_url)
 
+def job_type():
+    job_type = { 
+        "job_job_types": [],
+    }
+    print(job_type.get("job_job_types")[0])
+
+def convert_job_list():
+    jobs_list = []
+    for job in result_glassdoor:
+        if job.get("job_title") is None:
+            continue
+        pre_job_type = job.get("job_job_types")[0] if job.get("job_job_types") else "Not define"
+        job_data = {
+            "company": job.get("company_name", "Not define"),
+            "company_url": job.get("company_url", "Not define"),
+            "salary": job.get("job_salary").get("estimated"), 
+            "linkedin_url": "Not define", 
+            "indeed_url": "Not define", 
+            "apply_url": job.get("job_url", "Not define"), 
+            "job_url": job.get("job_url", "Not define"), 
+            "contract_type": pre_job_type, 
+            "job_description": job.get("job_description", "Not define"), 
+            "experience_level": "Not define", 
+            "location": job.get("job_location").get("city", "Not define"), 
+            "posted_time": job.get("job_posted_date", "Not define"), 
+            "published_at": job.get("job_posted_date", "Not define"), 
+            "publisher": "Glassdoor", 
+            "title": job.get("job_title", "Not define"), 
+            "created_at": datetime.now().isoformat(), 
+            "other": job.get("company_revenue") 
+        }
+        jobs_list.append(job_data)
+        print(f"convert successfully {job.get('job_title')}")
+
+    with open('jobs_list.json', 'w') as f:
+        json.dump(jobs_list, f, indent=4)
+
 if __name__ == "__main__":
     # jobs_list_test = []
     # jobs_list_test.extend(sample1)
     # jobs_list_test.extend(sample2)
     # with open('jobs_list_test.json', 'w') as f:
     #     json.dump(jobs_list_test, f, indent=4)
+    # convert_job_list()
+    # calculator_length()
     main()

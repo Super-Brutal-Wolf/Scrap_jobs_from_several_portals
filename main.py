@@ -52,65 +52,122 @@ class JobSearchRequest(BaseModel):
     region: Optional[str] = "Unknown"
     country: str
 
-def search_indeed(preprocessed_title: str, job_region: str, job_country: str) -> list:
+def search_glassdoor(preprocessed_title: str, job_region: str, job_country: str) -> list:
     job_title = preprocessed_title
     jobs_list = []
     try:
         location = job_country if job_region == "Unknown" else job_region
-        searching_title = job_title.strip().replace(" ", "+")
-        searching_location = location.strip().replace(" ", "+")
-        searching_url = f"https://www.indeed.com/jobs?q={searching_title}&l={searching_location}&fromage=1"
-        
+        logger.info(f"Searching for Glassdoor for {job_title} in {location}")
+
         run_input = {
-            "count": 50, #skip this for all
-            "findContacts": False,
-            "outputSchema": "raw",
+            "fromAge": "1",
+            "keyword": job_title,
+            "location": location,
+            "maxItems": 50,
             "proxy": {
                 "useApifyProxy": True,
-                "apifyProxyGroups": ["RESIDENTIAL"],
+                "apifyProxyGroups": [
+                    "RESIDENTIAL"
+                ],
                 "apifyProxyCountry": "US"
             },
-            "scrapeJobs.scrapeCompany": False,
-            "scrapeJobs.searchUrl": searching_url,
-            "useBrowser": True
+            "radius": "124"
         }
         time.sleep(10)
-        run = client.actor("qA8rz8tR61HdkfTBL").call(run_input=run_input)
+        run = client.actor("t2FNNV3J6mvckgV2g").call(run_input=run_input)
         dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-        logger.info(f"Found {len(dataset_items)} jobs from Indeed")
-
+        logger.info(f"Found {len(dataset_items)} jobs from Glassdoor")
+        
         for job in dataset_items:
-            if job.get("title") is None:
+            if job.get("job_title") is None:
                 continue
-            pre_indeed_url = "https://www.indeed.com" + job.get("viewJobLink")
-
+            pre_job_type = job.get("job_job_types")[0] if job.get("job_job_types") else "Not define"
             job_data = {
-                "company": job.get("company", "Not define"),
-                "company_url": job.get("companyOverviewLink", "Not define"),
-                "salary": job.get("salarySnippet").get("text", "Not define"), 
+                "company": job.get("company_name", "Not define"),
+                "company_url": job.get("company_url", "Not define"),
+                "salary": job.get("job_salary").get("estimated"), 
                 "linkedin_url": "Not define", 
-                "indeed_url": job.get("companyOverviewLink", "Not define"), 
-                "apply_url": pre_indeed_url, 
-                "job_url": pre_indeed_url, 
-                "contract_type": "Not define", 
-                "job_description": job.get("snippet", "Not define"), 
+                "indeed_url": "Not define", 
+                "apply_url": job.get("job_url", "Not define"), 
+                "job_url": job.get("job_url", "Not define"), 
+                "contract_type": pre_job_type, 
+                "job_description": job.get("job_description", "Not define"), 
                 "experience_level": "Not define", 
-                "location": job.get("jobLocationCity", "Not define"), 
-                "posted_time": job.get("formattedRelativeTime", "Not define"), 
-                "published_at": job.get("formattedRelativeTime", "Not define"), 
-                "publisher": "Indeed", 
-                "title": job.get("title", "Not define"), 
+                "location": job.get("job_location").get("city", "Not define"), 
+                "posted_time": job.get("job_posted_date", "Not define"), 
+                "published_at": job.get("job_posted_date", "Not define"), 
+                "publisher": "Glassdoor", 
+                "title": job.get("job_title", "Not define"), 
                 "created_at": datetime.now().isoformat(), 
-                "other": "Not define" 
+                "other": job.get("company_revenue") 
             }
             jobs_list.append(job_data)
-
         return jobs_list
-    
+
     except Exception as e:
-        logger.error(f"Error searching Indeed: {str(e)}")
-        error_message = f"Error searching Indeed: {str(e)}"
+        logger.error(f"Error searching glassdoor: {str(e)}")
+        error_message = f"Error searching glassdoor: {str(e)}"
         return [{"Error_message": error_message}]
+
+# def search_indeed(preprocessed_title: str, job_region: str, job_country: str) -> list:
+#     job_title = preprocessed_title
+#     jobs_list = []
+#     try:
+#         location = job_country if job_region == "Unknown" else job_region
+#         searching_title = job_title.strip().replace(" ", "+")
+#         searching_location = location.strip().replace(" ", "+")
+#         searching_url = f"https://www.indeed.com/jobs?q={searching_title}&l={searching_location}&fromage=1"
+        
+#         run_input = {
+#             "count": 50, #skip this for all
+#             "findContacts": False,
+#             "outputSchema": "raw",
+#             "proxy": {
+#                 "useApifyProxy": True,
+#                 "apifyProxyGroups": ["RESIDENTIAL"],
+#                 "apifyProxyCountry": "US"
+#             },
+#             "scrapeJobs.scrapeCompany": False,
+#             "scrapeJobs.searchUrl": searching_url,
+#             "useBrowser": True
+#         }
+#         time.sleep(10)
+#         run = client.actor("qA8rz8tR61HdkfTBL").call(run_input=run_input)
+#         dataset_items = list(client.dataset(run["defaultDatasetId"]).iterate_items())
+#         logger.info(f"Found {len(dataset_items)} jobs from Indeed")
+
+#         for job in dataset_items:
+#             if job.get("title") is None:
+#                 continue
+#             pre_indeed_url = "https://www.indeed.com" + job.get("viewJobLink")
+
+#             job_data = {
+#                 "company": job.get("company", "Not define"),
+#                 "company_url": job.get("companyOverviewLink", "Not define"),
+#                 "salary": job.get("salarySnippet").get("text", "Not define"), 
+#                 "linkedin_url": "Not define", 
+#                 "indeed_url": job.get("companyOverviewLink", "Not define"), 
+#                 "apply_url": pre_indeed_url, 
+#                 "job_url": pre_indeed_url, 
+#                 "contract_type": "Not define", 
+#                 "job_description": job.get("snippet", "Not define"), 
+#                 "experience_level": "Not define", 
+#                 "location": job.get("jobLocationCity", "Not define"), 
+#                 "posted_time": job.get("formattedRelativeTime", "Not define"), 
+#                 "published_at": job.get("formattedRelativeTime", "Not define"), 
+#                 "publisher": "Indeed", 
+#                 "title": job.get("title", "Not define"), 
+#                 "created_at": datetime.now().isoformat(), 
+#                 "other": "Not define" 
+#             }
+#             jobs_list.append(job_data)
+
+#         return jobs_list
+    
+#     except Exception as e:
+#         logger.error(f"Error searching Indeed: {str(e)}")
+#         error_message = f"Error searching Indeed: {str(e)}"
+#         return [{"Error_message": error_message}]
     
 
 # def search_linkedin(preprocessed_title: str, job_region: str, job_country: str) -> list:
@@ -182,15 +239,21 @@ async def main(data: JobSearchRequest):
                 # linkedin_jobs = search_linkedin(preprocessed_title, data.region, data.country)
                 # jobs_list.extend(linkedin_jobs)
                 # time.sleep(10)
-                indeed_jobs = search_indeed(preprocessed_title, data.region, data.country)
-                jobs_list.extend(indeed_jobs)
+                # indeed_jobs = search_indeed(preprocessed_title, data.region, data.country)
+                # jobs_list.extend(indeed_jobs)
+                # time.sleep(10)
+                glassdoor_jobs = search_glassdoor(preprocessed_title, data.region, data.country)
+                jobs_list.extend(glassdoor_jobs)
                 time.sleep(10)
         else:
             # linkedin_jobs = search_linkedin(data.jobTitle, data.region, data.country)
             # jobs_list.extend(linkedin_jobs)
             # time.sleep(10)
-            indeed_jobs = search_indeed(data.jobTitle, data.region, data.country)
-            jobs_list.extend(indeed_jobs)
+            # indeed_jobs = search_indeed(data.jobTitle, data.region, data.country)
+            # jobs_list.extend(indeed_jobs)
+            # time.sleep(10)
+            glassdoor_jobs = search_glassdoor(data.jobTitle, data.region, data.country)
+            jobs_list.extend(glassdoor_jobs)
             time.sleep(10)
 
         # Save to local JSON file with proper error handling
