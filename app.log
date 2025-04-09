@@ -2476,3 +2476,521 @@
 2025-04-08 14:30:01,361 - __main__ - INFO - Successfully inserted job: Secretary - FlexStaff
 2025-04-08 14:30:01,665 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
 2025-04-08 14:30:01,667 - __main__ - INFO - Successfully inserted job: Hotel Front Desk Clerk
+2025-04-08 21:59:46,191 - __main__ - INFO - Successfully connected to Supabase
+2025-04-08 21:59:53,865 - __main__ - INFO - Searching for Ziprecruiter for web developer in United States
+2025-04-08 22:00:05,067 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:00:05,069 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:00:15,071 - __main__ - INFO - Searching for Ziprecruiter for receptionist in United States
+2025-04-08 22:00:27,041 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:00:27,042 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:03:19,204 - __main__ - INFO - Successfully connected to Supabase
+2025-04-08 22:03:23,629 - __main__ - INFO - Searching for Ziprecruiter for web developer in United States
+2025-04-08 22:03:34,817 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:03:34,819 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:03:44,820 - __main__ - INFO - Searching for Ziprecruiter for receptionist in United States
+2025-04-08 22:03:55,896 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:03:55,897 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:25:08,054 - __main__ - INFO - Successfully connected to Supabase
+2025-04-08 22:25:12,956 - __main__ - INFO - Searching for Ziprecruiter for web developer in United States
+2025-04-08 22:25:24,876 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:25:24,877 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:25:34,878 - __main__ - INFO - Searching for Ziprecruiter for receptionist in United States
+2025-04-08 22:25:46,505 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 403 Forbidden"
+2025-04-08 22:25:46,508 - __main__ - ERROR - Error searching Ziprecruiter: You must rent a paid Actor in order to run it.
+2025-04-08 22:29:37,639 - __main__ - INFO - Successfully connected to Supabase
+2025-04-08 22:29:44,820 - __main__ - INFO - Searching for Ziprecruiter for web developer in United States
+2025-04-08 22:29:56,648 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 201 Created"
+2025-04-08 22:29:58,061 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/XBEjf9mp471a4RDPU?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:30:58,730 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/XBEjf9mp471a4RDPU?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:31:59,418 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/XBEjf9mp471a4RDPU?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:33:00,109 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/XBEjf9mp471a4RDPU?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:33:33,222 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/datasets/0LQ7IbmUHQLbyGa0f/items?offset=0&limit=1000 "HTTP/1.1 200 OK"
+2025-04-08 22:33:35,388 - __main__ - INFO - Found 120 jobs from Ziprecruiter
+2025-04-08 22:33:45,390 - __main__ - INFO - Searching for Ziprecruiter for receptionist in United States
+2025-04-08 22:33:59,229 - httpx - INFO - HTTP Request: POST https://api.apify.com/v2/acts/vQO5g45mnm8jwognj/runs "HTTP/1.1 201 Created"
+2025-04-08 22:34:00,652 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/J0njNaVAZIBjgWZ66?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:35:01,318 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/J0njNaVAZIBjgWZ66?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:36:01,992 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/J0njNaVAZIBjgWZ66?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:37:02,657 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/actor-runs/J0njNaVAZIBjgWZ66?waitForFinish=999999 "HTTP/1.1 200 OK"
+2025-04-08 22:37:28,575 - httpx - INFO - HTTP Request: GET https://api.apify.com/v2/datasets/XfMuTDCxwBBFjBKnR/items?offset=0&limit=1000 "HTTP/1.1 200 OK"
+2025-04-08 22:37:30,178 - __main__ - INFO - Found 120 jobs from Ziprecruiter
+2025-04-08 22:37:42,447 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:42,457 - __main__ - INFO - Successfully inserted job: Web Developer - Shopify Specialist
+2025-04-08 22:37:42,922 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:42,925 - __main__ - INFO - Successfully inserted job: PHP Developer
+2025-04-08 22:37:43,517 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:43,519 - __main__ - INFO - Successfully inserted job: Web Developer
+2025-04-08 22:37:44,139 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:44,140 - __main__ - INFO - Successfully inserted job: Marketing Cloud Web Developer (AM)
+2025-04-08 22:37:45,059 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:45,063 - __main__ - INFO - Successfully inserted job: Marketing Cloud Web Developer
+2025-04-08 22:37:45,674 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:45,677 - __main__ - INFO - Successfully inserted job: PHP/Magento Developer
+2025-04-08 22:37:46,150 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:46,152 - __main__ - INFO - Successfully inserted job: Web Developer
+2025-04-08 22:37:46,943 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:46,949 - __main__ - INFO - Successfully inserted job: Front-End Developer
+2025-04-08 22:37:47,419 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:37:47,422 - __main__ - ERROR - Failed to insert job Software Developer I: {'code': '23505', 'details': 'Key (company)=(Armed Forces Benefits Assoc.) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:37:47,890 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:47,893 - __main__ - INFO - Successfully inserted job: Web Developer with Digital Marketing Expertise
+2025-04-08 22:37:48,354 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:48,357 - __main__ - INFO - Successfully inserted job: Information Services Developer Senior - IS Integration
+2025-04-08 22:37:48,955 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:48,957 - __main__ - INFO - Successfully inserted job: Software Developer - Web
+2025-04-08 22:37:49,544 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:49,546 - __main__ - INFO - Successfully inserted job: Manufacturing Operator - Die Cutting
+2025-04-08 22:37:50,332 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:50,334 - __main__ - INFO - Successfully inserted job: Junior Web Developer and Database Administrator Intern
+2025-04-08 22:37:50,927 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:50,931 - __main__ - INFO - Successfully inserted job: Full Stack Web Developer
+2025-04-08 22:37:51,391 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:51,394 - __main__ - INFO - Successfully inserted job: Principal Systems Analyst
+2025-04-08 22:37:52,322 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:52,325 - __main__ - INFO - Successfully inserted job: Salesforce SME, Administrator, Developer, Product Dev Freelancer
+2025-04-08 22:37:53,416 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:53,419 - __main__ - INFO - Successfully inserted job: VP, SRS Agile Dev Lead
+2025-04-08 22:37:54,006 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:54,009 - __main__ - INFO - Successfully inserted job: Field Sales - Restaurant Tech
+2025-04-08 22:37:54,790 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:54,793 - __main__ - INFO - Successfully inserted job: Web / Website Developer
+2025-04-08 22:37:55,253 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:55,255 - __main__ - INFO - Successfully inserted job: Full stack developer (Only w2) || 6 months Contract || Irving, TX 75063 (Onsite from Day 1)
+2025-04-08 22:37:55,715 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:55,718 - __main__ - INFO - Successfully inserted job: Senior Electrical Engineer
+2025-04-08 22:37:56,174 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:56,177 - __main__ - INFO - Successfully inserted job: Manager of Community Affairs
+2025-04-08 22:37:56,631 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:56,632 - __main__ - INFO - Successfully inserted job: Full-Stack Web Developer - NJ only
+2025-04-08 22:37:57,086 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:57,088 - __main__ - INFO - Successfully inserted job: Drop Design Supervisor
+2025-04-08 22:37:57,541 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:57,543 - __main__ - INFO - Successfully inserted job: Firmware/Electronics QA Engineer
+2025-04-08 22:37:58,001 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:58,003 - __main__ - INFO - Successfully inserted job: QA Automation Engineer (Onsite Interview - Local Candidates Only) (W2 Only / No C2C)
+2025-04-08 22:37:58,510 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:58,513 - __main__ - INFO - Successfully inserted job: Software Engineer (Onsite - TS/SCI Clearance Required)
+2025-04-08 22:37:58,963 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:58,966 - __main__ - INFO - Successfully inserted job: Developer - Police Systems
+2025-04-08 22:37:59,417 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:59,419 - __main__ - INFO - Successfully inserted job: Buyer / Planner III
+2025-04-08 22:37:59,891 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:37:59,892 - __main__ - INFO - Successfully inserted job: Front-End Developer
+2025-04-08 22:38:00,340 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:00,343 - __main__ - INFO - Successfully inserted job: Software Developer Engineer - 22883 (22883)
+2025-04-08 22:38:00,790 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:00,793 - __main__ - INFO - Successfully inserted job: Senior Software Engineer - Fluent in Ukrainian or Russian
+2025-04-08 22:38:01,245 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:01,248 - __main__ - INFO - Successfully inserted job: Web Application Developer
+2025-04-08 22:38:02,053 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:02,056 - __main__ - INFO - Successfully inserted job: Compensation Data Analyst - Human Resources
+2025-04-08 22:38:02,506 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:02,508 - __main__ - INFO - Successfully inserted job: Associate Software Developer
+2025-04-08 22:38:02,958 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:02,961 - __main__ - INFO - Successfully inserted job: Quickbase Developer- BAckfill
+2025-04-08 22:38:03,414 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:03,417 - __main__ - INFO - Successfully inserted job: QA Engineer (Native App & SQL Testing exp req.)
+2025-04-08 22:38:04,205 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:04,208 - __main__ - INFO - Successfully inserted job: Earth Science Web Database Developer
+2025-04-08 22:38:04,668 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:04,671 - __main__ - INFO - Successfully inserted job: React Frontend Developer
+2025-04-08 22:38:05,124 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:05,126 - __main__ - INFO - Successfully inserted job: Hotel Maintenance Engineer
+2025-04-08 22:38:05,572 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:05,574 - __main__ - INFO - Successfully inserted job: Automation Systems Engineer
+2025-04-08 22:38:06,037 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:06,038 - __main__ - INFO - Successfully inserted job: Senior Software Engineer
+2025-04-08 22:38:06,481 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:06,483 - __main__ - INFO - Successfully inserted job: Developer - Police Systems
+2025-04-08 22:38:06,942 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:06,944 - __main__ - INFO - Successfully inserted job: Front End Developer_W2_On-site Hybrid in Richmond, VA, Plano, TX, or McLean, VA
+2025-04-08 22:38:07,399 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:07,402 - __main__ - INFO - Successfully inserted job: RPA Developer
+2025-04-08 22:38:07,862 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:07,865 - __main__ - INFO - Successfully inserted job: RPA developer with Blue Prism
+2025-04-08 22:38:08,310 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:08,313 - __main__ - INFO - Successfully inserted job: RPA Developer
+2025-04-08 22:38:08,782 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:08,783 - __main__ - INFO - Successfully inserted job: Senior Software Engineer, ServiceNow (Cloud Operations Resilience Engineering)
+2025-04-08 22:38:09,241 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:09,244 - __main__ - INFO - Successfully inserted job: Digital Marketing Manager
+2025-04-08 22:38:09,694 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:09,698 - __main__ - INFO - Successfully inserted job: RPA Blue prism Developer (Required Local Candidates)
+2025-04-08 22:38:10,152 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:10,155 - __main__ - INFO - Successfully inserted job: Developer III - Request #35900317
+2025-04-08 22:38:10,603 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:10,606 - __main__ - INFO - Successfully inserted job: Software Developer - GXNext
+2025-04-08 22:38:11,056 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:11,058 - __main__ - INFO - Successfully inserted job: Senior Full Stack Developer
+2025-04-08 22:38:11,882 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:38:11,884 - __main__ - ERROR - Failed to insert job Software Developer - Test/Web Applications: {'code': '23505', 'details': 'Key (company)=(Peraton) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:38:12,987 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:12,988 - __main__ - INFO - Successfully inserted job: Information Technology Engineer 63806010
+2025-04-08 22:38:13,442 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:13,444 - __main__ - INFO - Successfully inserted job: Lead React Full stack Developer
+2025-04-08 22:38:13,917 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:13,921 - __main__ - INFO - Successfully inserted job: Web Services and Digital Marketing Manager
+2025-04-08 22:38:14,381 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:14,382 - __main__ - INFO - Successfully inserted job: Sr Lead UX Designer
+2025-04-08 22:38:14,842 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:15,167 - __main__ - INFO - Successfully inserted job: Swim Programming Coordinator
+2025-04-08 22:38:15,941 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:15,943 - __main__ - INFO - Successfully inserted job: Data Science Intern - Summer 2025
+2025-04-08 22:38:16,397 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:16,400 - __main__ - INFO - Successfully inserted job: NCDHHS- ITD Lead React Fullstack Developer
+2025-04-08 22:38:16,847 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:16,849 - __main__ - INFO - Successfully inserted job: React Developer - Retail exp.
+2025-04-08 22:38:17,304 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:17,306 - __main__ - INFO - Successfully inserted job: Patron Experience Associate (Part-Time) - Conifer Library
+2025-04-08 22:38:17,771 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:38:17,773 - __main__ - ERROR - Failed to insert job Web Applications Developer: {'code': '23505', 'details': 'Key (company)=(Bowhead) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:38:18,245 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:18,248 - __main__ - INFO - Successfully inserted job: Group Lead Engineer - IT/Cloud Solution
+2025-04-08 22:38:18,707 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:18,710 - __main__ - INFO - Successfully inserted job: SUASMAN Help Desk Support Specialist
+2025-04-08 22:38:19,483 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:19,485 - __main__ - INFO - Successfully inserted job: Pharmaceutical MES Enterprise Architect- Relo to Indiana
+2025-04-08 22:38:19,940 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:19,942 - __main__ - INFO - Successfully inserted job: Full Stack Developer
+2025-04-08 22:38:20,406 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:20,408 - __main__ - INFO - Successfully inserted job: Software Development Summer Intern
+2025-04-08 22:38:20,862 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:20,865 - __main__ - INFO - Successfully inserted job: Quality Assurance (QA) Engineer
+2025-04-08 22:38:21,668 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:21,670 - __main__ - INFO - Successfully inserted job: Full Stack Software Engineer
+2025-04-08 22:38:22,445 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:22,446 - __main__ - INFO - Successfully inserted job: Office Engineer
+2025-04-08 22:38:22,904 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:22,907 - __main__ - INFO - Successfully inserted job: Maintenance Technician I
+2025-04-08 22:38:23,368 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:23,370 - __main__ - INFO - Successfully inserted job: eCommerce Full Stack Developer (React / Shopify) - On Site
+2025-04-08 22:38:24,160 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:24,164 - __main__ - INFO - Successfully inserted job: ServiceNow Technical Specialist (Remote) - Need Local Candidates Only
+2025-04-08 22:38:24,597 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:24,601 - __main__ - INFO - Successfully inserted job: RPA Developer with Blue Prism
+2025-04-08 22:38:25,810 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:25,813 - __main__ - INFO - Successfully inserted job: Lead React Fullstack Developer (HYBRID)
+2025-04-08 22:38:26,588 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:38:26,590 - __main__ - ERROR - Failed to insert job Digital Marketing Manager: {'code': '23505', 'details': 'Key (company)=(Gloster Furniture) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:38:27,039 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:27,041 - __main__ - INFO - Successfully inserted job: Full Stack .NET Developer
+2025-04-08 22:38:27,490 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:27,492 - __main__ - INFO - Successfully inserted job: EMC Software Developer
+2025-04-08 22:38:27,954 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:27,956 - __main__ - INFO - Successfully inserted job: Software Developer
+2025-04-08 22:38:28,407 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:28,410 - __main__ - INFO - Successfully inserted job: DevOps / Developer
+2025-04-08 22:38:28,879 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:28,882 - __main__ - INFO - Successfully inserted job: IT Enterprise Applications Engineer - law firm
+2025-04-08 22:38:29,328 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:29,329 - __main__ - INFO - Successfully inserted job: Collibra Implementation Engineer
+2025-04-08 22:38:29,779 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:29,780 - __main__ - INFO - Successfully inserted job: SharePoint Engineer with Automation
+2025-04-08 22:38:30,236 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:30,237 - __main__ - INFO - Successfully inserted job: Tree Care Business Developer (Arborist License Required)
+2025-04-08 22:38:31,005 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:31,007 - __main__ - INFO - Successfully inserted job: Test Engineer (Bilingual/Spanish) ONSITE
+2025-04-08 22:38:32,752 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:32,755 - __main__ - INFO - Successfully inserted job: Data Specialist
+2025-04-08 22:38:34,575 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:34,577 - __main__ - INFO - Successfully inserted job: Maintenance Mechanical Technician
+2025-04-08 22:38:35,346 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:35,347 - __main__ - INFO - Successfully inserted job: Programmer/Analyst: III (Senior) / Senior Salesforce Developer
+2025-04-08 22:38:36,789 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:36,792 - __main__ - INFO - Successfully inserted job: Maintenance Technician - Affinity at Loveland
+2025-04-08 22:38:37,924 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:37,927 - __main__ - INFO - Successfully inserted job: Front End Developer - Node.JS, GraphQL, React
+2025-04-08 22:38:38,382 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:38,385 - __main__ - INFO - Successfully inserted job: Software Developer (Mid Level)
+2025-04-08 22:38:39,493 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:39,497 - __main__ - INFO - Successfully inserted job: Technical Specialist- Junior
+2025-04-08 22:38:40,329 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:40,333 - __main__ - INFO - Successfully inserted job: Graphic Design Specialist
+2025-04-08 22:38:41,121 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:41,123 - __main__ - INFO - Successfully inserted job: Interpreter
+2025-04-08 22:38:41,574 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:41,575 - __main__ - INFO - Successfully inserted job: Senior Delphi Developer
+2025-04-08 22:38:42,041 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:42,044 - __main__ - INFO - Successfully inserted job: Software Engineer
+2025-04-08 22:38:42,834 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:42,837 - __main__ - INFO - Successfully inserted job: Center Director
+2025-04-08 22:38:43,613 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:43,614 - __main__ - INFO - Successfully inserted job: Social Media Specialist
+2025-04-08 22:38:44,060 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:44,066 - __main__ - INFO - Successfully inserted job: Electronics Technician
+2025-04-08 22:38:44,852 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:44,853 - __main__ - INFO - Successfully inserted job: SEO Specialist
+2025-04-08 22:38:45,636 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:45,638 - __main__ - INFO - Successfully inserted job: Software Engineer - AI Driven Testing Tools
+2025-04-08 22:38:46,101 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:46,104 - __main__ - INFO - Successfully inserted job: Zuora CPQ Lead Developer__ REMOTE
+2025-04-08 22:38:46,546 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:46,547 - __main__ - INFO - Successfully inserted job: Full Stack Developer
+2025-04-08 22:38:47,322 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:47,325 - __main__ - INFO - Successfully inserted job: Regular Business Analyst (Digital Marketing/Web Analytics)
+2025-04-08 22:38:48,092 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:48,094 - __main__ - INFO - Successfully inserted job: Sales Development Representative (SDR)
+2025-04-08 22:38:48,552 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:38:48,554 - __main__ - ERROR - Failed to insert job SharePoint Engineer with Automation: {'code': '23505', 'details': 'Key (company)=(Aaditus Technologies LLC) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:38:49,343 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:49,348 - __main__ - INFO - Successfully inserted job: Salesforce Senior Marketing Cloud Developer
+2025-04-08 22:38:49,804 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:49,807 - __main__ - INFO - Successfully inserted job: Database - GIS Developer
+2025-04-08 22:38:50,253 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:50,255 - __main__ - INFO - Successfully inserted job: Technology Alignment Engineer
+2025-04-08 22:38:51,357 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:51,360 - __main__ - INFO - Successfully inserted job: Teen Librarian
+2025-04-08 22:38:52,151 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:52,154 - __main__ - INFO - Successfully inserted job: Software Engineer
+2025-04-08 22:38:52,607 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:52,610 - __main__ - INFO - Successfully inserted job: Software Developer
+2025-04-08 22:38:53,064 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:53,068 - __main__ - INFO - Successfully inserted job: Parts Coordinator - Primoris Pipeline
+2025-04-08 22:38:53,519 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:53,522 - __main__ - INFO - Successfully inserted job: Software Engineer
+2025-04-08 22:38:54,350 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:54,356 - __main__ - INFO - Successfully inserted job: Java Developer
+2025-04-08 22:38:55,154 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:55,157 - __main__ - INFO - Successfully inserted job: Arts Partnership Development Manager
+2025-04-08 22:38:55,617 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:55,619 - __main__ - INFO - Successfully inserted job: .Net Developer
+2025-04-08 22:38:56,296 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:56,300 - __main__ - INFO - Successfully inserted job: Front Office Receptionist
+2025-04-08 22:38:56,756 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:56,757 - __main__ - INFO - Successfully inserted job: Law Firm Receptionist
+2025-04-08 22:38:57,203 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:57,204 - __main__ - INFO - Successfully inserted job: Medical Front Desk Receptionist
+2025-04-08 22:38:57,667 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:57,670 - __main__ - INFO - Successfully inserted job: Dental Front Desk Receptionist
+2025-04-08 22:38:58,431 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:58,433 - __main__ - INFO - Successfully inserted job: Receptionist-Admin. Assistant
+2025-04-08 22:38:58,883 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:58,884 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:38:59,329 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:59,331 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:38:59,781 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:38:59,784 - __main__ - INFO - Successfully inserted job: Front Desk Administrator for Acupuncture Clinic (Receptionist)
+2025-04-08 22:39:00,233 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:00,235 - __main__ - INFO - Successfully inserted job: Front Desk Coordinator
+2025-04-08 22:39:00,690 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:00,692 - __main__ - INFO - Successfully inserted job: Temporary Receptionist - 6-Day Assignment
+2025-04-08 22:39:01,141 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:01,144 - __main__ - INFO - Successfully inserted job: Front desk receptionist
+2025-04-08 22:39:01,599 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:01,601 - __main__ - INFO - Successfully inserted job: Receptionist for a growing busy Seamless Rain Gutter Company
+2025-04-08 22:39:02,056 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:02,059 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:02,521 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:02,524 - __main__ - INFO - Successfully inserted job: Receptionist - 2916
+2025-04-08 22:39:02,976 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:02,977 - __main__ - INFO - Successfully inserted job: Dental Receptionist
+2025-04-08 22:39:03,444 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:03,448 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:03,907 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:03,909 - __main__ - INFO - Successfully inserted job: Medical Front Desk Receptionist
+2025-04-08 22:39:04,367 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:04,369 - __main__ - INFO - Successfully inserted job: Automotive Receptionist
+2025-04-08 22:39:04,824 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:04,825 - __main__ - INFO - Successfully inserted job: RECEPTIONIST
+2025-04-08 22:39:05,272 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:05,273 - __main__ - INFO - Successfully inserted job: On-Call/As Needed Front Desk Receptionist
+2025-04-08 22:39:05,725 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:05,726 - __main__ - INFO - Successfully inserted job: Paralegal & Receptionist / Legal Assistant
+2025-04-08 22:39:06,180 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:06,181 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist - Primary Care Office
+2025-04-08 22:39:06,986 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:06,987 - __main__ - INFO - Successfully inserted job: Receptionist - District Office
+2025-04-08 22:39:07,756 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:07,759 - __main__ - INFO - Successfully inserted job: Medical Receptionist/Scheduler
+2025-04-08 22:39:08,220 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:08,221 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist/Administrative Assistant
+2025-04-08 22:39:08,683 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:08,684 - __main__ - INFO - Successfully inserted job: Revenue Cycle Representative/Medical Receptionist
+2025-04-08 22:39:09,158 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:09,176 - __main__ - INFO - Successfully inserted job: Medical Receptionist / Front Desk Coordinator
+2025-04-08 22:39:09,637 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:09,644 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:10,090 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:10,092 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:10,550 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:10,553 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:11,699 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:11,701 - __main__ - INFO - Successfully inserted job: Bilingual Receptionist & Operations Executive
+2025-04-08 22:39:12,141 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:12,142 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist - Part-time - LM
+2025-04-08 22:39:12,586 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:12,589 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:13,034 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:13,036 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:13,500 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:13,503 - __main__ - INFO - Successfully inserted job: Medical Receptionist, Part Time, State Island NY
+2025-04-08 22:39:13,963 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:13,967 - __main__ - INFO - Successfully inserted job: Legal Receptionist
+2025-04-08 22:39:14,426 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:14,429 - __main__ - INFO - Successfully inserted job: Receptionist/Front Desk
+2025-04-08 22:39:14,888 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:14,902 - __main__ - INFO - Successfully inserted job: Receptionist and Site Manager (Part-Time)
+2025-04-08 22:39:15,717 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:15,718 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist
+2025-04-08 22:39:16,524 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:16,525 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:17,356 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:17,360 - __main__ - INFO - Successfully inserted job: Dental Receptionist
+2025-04-08 22:39:18,164 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:18,165 - __main__ - INFO - Successfully inserted job: Veterinary Receptionist
+2025-04-08 22:39:18,623 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:18,624 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:19,070 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:19,071 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:19,517 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:19,518 - __main__ - INFO - Successfully inserted job: Receptionist - State Farm Agent Team Member
+2025-04-08 22:39:19,967 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:19,968 - __main__ - INFO - Successfully inserted job: Veterinary Receptionist
+2025-04-08 22:39:20,435 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:39:20,436 - __main__ - ERROR - Failed to insert job Bilingual Receptionist: {'code': '23505', 'details': 'Key (company)=(TEKsystems) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:39:20,884 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:20,886 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:21,347 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:21,349 - __main__ - INFO - Successfully inserted job: HR Administrative Assistant/Receptionist
+2025-04-08 22:39:22,166 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:22,167 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist
+2025-04-08 22:39:22,622 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:22,623 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:23,073 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:23,074 - __main__ - INFO - Successfully inserted job: Dentist's Office Receptionist
+2025-04-08 22:39:23,526 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:23,527 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:23,967 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:23,968 - __main__ - INFO - Successfully inserted job: Part Time Receptionist
+2025-04-08 22:39:25,124 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:25,125 - __main__ - INFO - Successfully inserted job: Receptionist Administrative Support
+2025-04-08 22:39:26,539 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:26,541 - __main__ - INFO - Successfully inserted job: Medical Receptionist / Front Desk Receptionist
+2025-04-08 22:39:26,983 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:26,985 - __main__ - INFO - Successfully inserted job: Medical Office Receptionist
+2025-04-08 22:39:28,907 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:28,908 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:29,680 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:39:29,681 - __main__ - ERROR - Failed to insert job Receptionist Administrative Support: {'code': '23505', 'details': 'Key (company)=(Sea Towers Owners Association, Inc.) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:39:30,460 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:30,461 - __main__ - INFO - Successfully inserted job: Receptionist- Desert European Motorcars Campus
+2025-04-08 22:39:30,912 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:30,913 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:31,362 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:31,363 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:31,808 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:31,808 - __main__ - INFO - Successfully inserted job: Office Receptionist *ASAP*
+2025-04-08 22:39:32,618 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:32,619 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:33,389 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:33,392 - __main__ - INFO - Successfully inserted job: Pediatric Medical Receptionist
+2025-04-08 22:39:33,841 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:33,842 - __main__ - INFO - Successfully inserted job: Security Receptionist Officer
+2025-04-08 22:39:34,299 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:34,301 - __main__ - INFO - Successfully inserted job: Receptionist - State Farm Agent Team Member
+2025-04-08 22:39:34,759 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:34,761 - __main__ - INFO - Successfully inserted job: Receptionist - BMW of Arlington
+2025-04-08 22:39:35,219 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:35,221 - __main__ - INFO - Successfully inserted job: RECEPTIONIST - LH & HP
+2025-04-08 22:39:35,670 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:35,672 - __main__ - INFO - Successfully inserted job: Monitor Tech/Unit Clerk, Med/Surg, 7pm 7am
+2025-04-08 22:39:36,791 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:36,794 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:37,923 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:37,926 - __main__ - INFO - Successfully inserted job: Medical Receptionist - Henderson, NV
+2025-04-08 22:39:38,830 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:38,831 - __main__ - INFO - Successfully inserted job: Receptionist: Part-Time, flexible schedule
+2025-04-08 22:39:39,935 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:39,937 - __main__ - INFO - Successfully inserted job: Physical Therapy Medical Receptionist
+2025-04-08 22:39:40,382 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:40,384 - __main__ - INFO - Successfully inserted job: Medical Office receptionist
+2025-04-08 22:39:40,848 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:40,849 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist
+2025-04-08 22:39:41,633 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:41,635 - __main__ - INFO - Successfully inserted job: Veterinary Receptionist
+2025-04-08 22:39:42,088 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:42,090 - __main__ - INFO - Successfully inserted job: Bilingual Receptionist
+2025-04-08 22:39:43,255 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:39:43,257 - __main__ - ERROR - Failed to insert job Law firm Receptionist: {'code': '23505', 'details': 'Key (company)=(R & W Group) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:39:44,024 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:44,025 - __main__ - INFO - Successfully inserted job: Dental Receptionist
+2025-04-08 22:39:44,472 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:44,475 - __main__ - INFO - Successfully inserted job: Receptionist (Part-time)
+2025-04-08 22:39:44,935 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:44,937 - __main__ - INFO - Successfully inserted job: CAH-NSP Receptionist-Pediatrics Urgent Care
+2025-04-08 22:39:46,664 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:46,665 - __main__ - INFO - Successfully inserted job: Corporate Receptionist
+2025-04-08 22:39:47,494 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:47,498 - __main__ - INFO - Successfully inserted job: Receptionist - State Farm Agent Team Member
+2025-04-08 22:39:48,985 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:48,987 - __main__ - INFO - Successfully inserted job: Medical Assistant / Medical Receptionist
+2025-04-08 22:39:49,754 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:49,757 - __main__ - INFO - Successfully inserted job: CAH-NSP Receptionist-Pediatrics Urgent Care
+2025-04-08 22:39:50,579 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:50,584 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:51,060 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:51,065 - __main__ - INFO - Successfully inserted job: Receptionist - Mercedes-Benz of Omaha
+2025-04-08 22:39:51,866 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:51,868 - __main__ - INFO - Successfully inserted job: Medical Receptionist
+2025-04-08 22:39:52,654 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:52,656 - __main__ - INFO - Successfully inserted job: Summer Receptionist (Temporary)
+2025-04-08 22:39:53,753 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:53,754 - __main__ - INFO - Successfully inserted job: Veterinary Receptionist
+2025-04-08 22:39:54,845 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:54,848 - __main__ - INFO - Successfully inserted job: Administrative Assistant / Receptionist
+2025-04-08 22:39:55,659 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:55,660 - __main__ - INFO - Successfully inserted job: Receptionist - Temp (Food Warehouse)
+2025-04-08 22:39:56,437 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:56,439 - __main__ - INFO - Successfully inserted job: Bilingual Office Assistant/Receptionist
+2025-04-08 22:39:56,894 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:56,898 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:57,354 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:57,356 - __main__ - INFO - Successfully inserted job: Receptionist - State Farm Agent Team Member
+2025-04-08 22:39:57,819 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:57,820 - __main__ - INFO - Successfully inserted job: Join Our Doggy Daycare as a Front Desk Receptionist-Where Every Day is a "Paw-some" Adventure!
+2025-04-08 22:39:58,636 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:58,638 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:39:59,098 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:59,101 - __main__ - INFO - Successfully inserted job: Automotive Sales Receptionist Ford
+2025-04-08 22:39:59,549 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:39:59,552 - __main__ - INFO - Successfully inserted job: SCHEDULER RECEPTIONIST
+2025-04-08 22:40:00,008 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 409 Conflict"
+2025-04-08 22:40:00,010 - __main__ - ERROR - Failed to insert job Receptionist: {'code': '23505', 'details': 'Key (company)=(Sphirea Plus) already exists.', 'hint': None, 'message': 'duplicate key value violates unique constraint "scraped_jobs_company_key"'}
+2025-04-08 22:40:00,468 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:00,470 - __main__ - INFO - Successfully inserted job: Receptionist English-Spanish
+2025-04-08 22:40:00,935 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:00,938 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:40:01,385 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:01,388 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:40:01,885 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:01,887 - __main__ - INFO - Successfully inserted job: Full-Time Receptionist
+2025-04-08 22:40:02,994 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:02,998 - __main__ - INFO - Successfully inserted job: 35934113 Receptionist- Arlington, TX
+2025-04-08 22:40:03,786 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:03,787 - __main__ - INFO - Successfully inserted job: Receptionist/Administrative Assistant
+2025-04-08 22:40:04,561 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:04,563 - __main__ - INFO - Successfully inserted job: Receptionist
+2025-04-08 22:40:05,414 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:05,417 - __main__ - INFO - Successfully inserted job: Weekend Receptionist
+2025-04-08 22:40:05,869 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:05,870 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist
+2025-04-08 22:40:07,287 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:07,288 - __main__ - INFO - Successfully inserted job: Security Receptionist - Tech Campus
+2025-04-08 22:40:08,073 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:08,074 - __main__ - INFO - Successfully inserted job: Front Desk Weekend Part-time Receptionist
+2025-04-08 22:40:08,523 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:09,135 - __main__ - INFO - Successfully inserted job: Receptionist/Kennel Technician
+2025-04-08 22:40:10,637 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:10,641 - __main__ - INFO - Successfully inserted job: Receptionist- Per Diem
+2025-04-08 22:40:11,094 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:11,098 - __main__ - INFO - Successfully inserted job: Client Services Representative
+2025-04-08 22:40:11,884 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:11,887 - __main__ - INFO - Successfully inserted job: Part-Time Evening Receptionist at Jaguar Land Rover Dealership
+2025-04-08 22:40:12,669 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:12,672 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist
+2025-04-08 22:40:13,134 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:13,137 - __main__ - INFO - Successfully inserted job: Front Desk Receptionist/Dental Assistant - Tampa
+2025-04-08 22:40:13,587 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:13,590 - __main__ - INFO - Successfully inserted job: Spa Receptionist (Part Time) - Waldorf Astoria Park City
+2025-04-08 22:40:14,703 - httpx - INFO - HTTP Request: POST https://xlpjtxzhzoffntvhhfbc.supabase.co/rest/v1/scraped_jobs "HTTP/2 201 Created"
+2025-04-08 22:40:14,705 - __main__ - INFO - Successfully inserted job: Front Office Receptionist

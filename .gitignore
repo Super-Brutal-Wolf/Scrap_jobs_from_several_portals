@@ -1,10 +1,22 @@
-env
-__pycache__
+# Python virtual environments
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
 .env
-.venv
+
+# Result files
 jobs_list.json
 result_Indeed.py
 result_Linkedin.py
 result_Glassdoor.py
+result_Ziprecruiter.py
+
+# Temporary files
 temp.json
 temp.py
